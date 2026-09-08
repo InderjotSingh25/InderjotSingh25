@@ -97,7 +97,6 @@ def derive_stats(days):
     monthly = defaultdict(int)
     for d in days:
         month = d["date"][:7]  # YYYY-MM
-        monthly[d["count"]] and None
         monthly[month] += d["count"]
 
     return {
